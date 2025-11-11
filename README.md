@@ -8,5 +8,5 @@ Group Member
 5. LUTFI BINTANG ADRIANTO
 6. MUHAMMAD FARUQ RAIS
 
-Study Case :
+Case :
 Aplikasi Pengelolaan Data Siswa
