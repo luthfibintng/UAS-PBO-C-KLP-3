@@ -1,1 +1,12 @@
 # Aplikasi-Pengelolaan-Data-Siswa
+
+Group Member
+1. MUHAMMAD SULTHAN SHADIQ
+2. AR RAUDHATUL PUTRI MUHIDA
+3. T MUHAMMAD ALFI
+4. NAJIYA IRAWAN
+5. LUTFI BINTANG ADRIANTO
+6. MUHAMMAD FARUQ RAIS
+
+Study Case :
+Aplikasi Pengelolaan Data Siswa
