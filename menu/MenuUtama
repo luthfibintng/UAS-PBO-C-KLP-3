@@ -1,0 +1,30 @@
+package menu;
+
+import main.Aplikasi;
+
+public class MenuUtama {
+    public static void tampilkan() {
+        boolean isRunning = true;
+        while (isRunning) {
+            Aplikasi.cls();
+            System.out.println("=========================================");
+            System.out.println("   APLIKASI PENERIMAAN SISWA BARU 2025   ");
+            System.out.println("=========================================");
+            System.out.println("1. Masuk sebagai ADMIN");
+            System.out.println("2. Masuk sebagai SISWA");
+            System.out.println("3. Keluar Aplikasi");
+            System.out.print("Pilih peran > ");
+
+            String role = Aplikasi.scanner.nextLine();
+            switch (role) {
+                case "1" -> MenuAdmin.login(); 
+                case "2" -> MenuSiswa.akses(); 
+                case "3" -> {
+                    System.out.println("Terima kasih.");
+                    isRunning = false;
+                }
+                default -> System.out.println("Pilihan tidak valid.");
+            }
+        }
+    }
+}
