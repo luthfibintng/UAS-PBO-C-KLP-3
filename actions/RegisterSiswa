@@ -31,3 +31,15 @@ public class RegisterSiswa {
             if (nisn.length() == 8) break;
             System.out.println("Error: NISN harus 8 karakter!");
         }
+
+        System.out.print("Tanggal Lahir (DD-MM-YYYY): ");
+        String tgl = Aplikasi.scanner.nextLine();
+
+        Siswa s = new Siswa(u, p, n, "PENDING", nisn, tgl);
+        Aplikasi.userList.add(s);
+        DataManager.saveToFile(Aplikasi.userList);
+        
+        System.out.println("Daftar Berhasil!");
+        Aplikasi.pressEnter();
+    }
+}
