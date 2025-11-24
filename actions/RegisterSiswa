@@ -1,0 +1,33 @@
+package actions;
+
+import main.Aplikasi;
+import model.Siswa;
+import model.User;
+import util.DataManager;
+
+public class RegisterSiswa {
+    public void eksekusi() {
+        System.out.println("--- REGISTER ---");
+        System.out.print("Username: ");
+        String u = Aplikasi.scanner.nextLine();
+        
+        for(User user : Aplikasi.userList) {
+            if(user.getUsername().equalsIgnoreCase(u)) {
+                System.out.println("Username dipakai.");
+                Aplikasi.pressEnter();
+                return;
+            }
+        }
+
+        System.out.print("Password: ");
+        String p = Aplikasi.scanner.nextLine();
+        System.out.print("Nama Lengkap: ");
+        String n = Aplikasi.scanner.nextLine();
+
+        String nisn = "";
+        while (true) {
+            System.out.print("NISN (8 Karakter): ");
+            nisn = Aplikasi.scanner.nextLine();
+            if (nisn.length() == 8) break;
+            System.out.println("Error: NISN harus 8 karakter!");
+        }
