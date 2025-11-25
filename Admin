@@ -1,0 +1,23 @@
+package model;
+
+public class Admin extends User {
+
+    public Admin(String username, String password) {
+        super(username, password);
+    }
+
+    @Override
+    public void displayRole() {
+        System.out.println("Role: Administrator Sistem");
+    }
+
+    /**
+     * Mengubah data Admin menjadi format string untuk disimpan di file.
+     * Format: TIPE;USERNAME;PASSWORD;NAMA_DUMMY;STATUS_DUMMY
+     */
+    @Override
+    public String toFileString() {
+        // "Administrator" dan "ADMIN" hanyalah placeholder agar formatnya seragam dengan Siswa
+        return "ADMIN;" + username + ";" + password + ";Administrator;ADMIN";
+    }
+}
